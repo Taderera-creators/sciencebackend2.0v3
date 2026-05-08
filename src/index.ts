@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import * as dotenv from "dotenv";
 
 import { logInRouter } from "./routes/log-in";
 import { userDetailsRouter } from "./routes/user-details";
@@ -11,6 +10,7 @@ import { FeedbackRouter } from "./routes/feedbacks";
 
 
 require("dotenv").config();
+import * as dotenv from "dotenv";
 
 const app = express();
 
