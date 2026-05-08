@@ -9,7 +9,9 @@ import { FeedbackRouter } from "./routes/feedbacks";
 
 
 
+
 require("dotenv").config();
+
 import * as dotenv from "dotenv";
 
 const app = express();
@@ -31,6 +33,11 @@ mongoose.connect(
  
  
 );
+
+
+
+
+
 
 //leaving autoIndex to true cause a signficant poor perfomance
 app.listen(8000, () => {
